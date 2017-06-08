@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<title>Megan Goodling DREU</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
+    <a href="#home" class="w3-bar-item w3-button"><b>Megan Goodling</b>  DREU Program Summer 2017</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about-me" class="w3-bar-item w3-button">About Me</a>
+      <a href="#about-mentor" class="w3-bar-item w3-button">About Mentor</a>
+      <a href="#my-research" class="w3-bar-item w3-button">My Research</a>
+      <a href="#blog" class="w3-bar-item w3-button">Blog</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="header.jpg" alt="Columbia" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>MG</b></span> <span class="w3-hide-small w3-text-dark-gray">DREU</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- About Me Section -->
+  <div class="w3-container w3-padding-32" id="about-me">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><b>About Me</b></h3>
+    <p>My name is Megan Godling. I am a rising junior at Davidson College. I am a computer science major and mathematics minor. I will graduate in May of 2019. My email is megoodling@davidson.edu, and my website can be found <a href = "http://www.megangoodling.com" target="_blank">here</a>.
+    </p>
+    <p>I play Division 1 soccer at Davidson. I love yoga, music, skiing, and exploring both the city and the outdoors. I love exploring New York, and have gone to many concerts and fun workout classes.         I am living at Columbia's East Campus apartments with 4 other girls (who I had never met before this)! Luckily, I like my roommates and we go out to dinner and explore the city together.
+    </p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l2 m6 w3-margin-bottom">
+      <img src="me.jpeg" alt="Megan" style="width:100%">
+      <div align="center"><h4>Megan Goodling</h4></div>
+      <p><button class="w3-button w3-dark-grey w3-block"><a href = "http://megangoodling.com/" target="_blank">Website</a></button></p>
+    </div>
+  </div>
+
+  <!-- About Mentor Section -->
+  <div class="w3-container w3-padding-32" id="about-mentor">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><b>About Mentor</b></h3>
+    <p>Dr. Kathleen McKeown of Columbia University is the Henry and Gertrude Rothschild Professor of Computer Science. She directs the Institute for Data Sciences and Engineering. Her primary interests lie in natural language processing and generation. Her research focuses on text summarization, statistical natural language, and the generation of multimedia explanation. Her website can be found <a href = "http://www.cs.columbia.edu/~kathy/" target="_blank">here</a>.
+    </p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l2 m6 w3-margin-bottom">
+      <img src="http://engineering.columbia.edu/web/newsletter/files_engineeringnews/McKeown300.png" alt="Kathy" style="width:100%">
+      <div align="center"><h4>Dr. Kathleen McKeown</h4></div>
+      <p><button class="w3-button w3-dark-grey w3-block"><a href = "http://www.cs.columbia.edu/~kathy/" target="_blank">Website</a></button></p>
+    </div>
+  </div>
+
+  <!-- My Research Section -->
+  <div class="w3-container w3-padding-32" id="my-research">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><b>My Research</b></h3>
+    <p>My research project is to create an interactive map using the Twitter data and a NLP emotion classifier that could potentially be a useful tool for analyzing Chicago gang activity.</p>
+    <p>I will do this by scraping the Twitter data to filter the streets, blocks, and gang names mentioned in handles, tweets and retweets in the Chicago gang dataset of 1.6 million tweets. I will use a dictionary to cross reference blocks and street names in the area to be searched, which will be manually entered by the user of the program (i.e. 62, 39, Vernon). I will also create a dictionary of the known gangs in the area, and these will be searched for to. My program will create a new dictionary to associate each user with every place and gang mentioned. If a user retweets someone else’s tweet that contains a location, the location will be associated with the original tweeter. Then a “pin” representation of each tweet would be created, containing the location, handle, content, date created, and aggression/loss score generated by Terra’s NLP classifier. Potentially I could triangulate or average the locations to figure out where the user spends the most time.</p>
+    <p>I will plot the pins or triangulations on an interactive map. The pins will be the color of the aggression/loss score (i.e. red for aggressive, blue for loss on a gradient scale). The map will be adjustable so that users can filter tweets by date and key phrase. Dates could be search for a specific event such as a death or birthday (i.e. “RIP Tyquan” or “HBD”). This would allow us insight into where people are talking about events that happen in the community, on a somewhat fine-grained scale.</p>
+    <p>On the same map, I will plot neighborhood blight and arrests. The map will allow the user to toggle this data on and off. The user will be able to filter arrests by type (i.e. substance abuse, homicide). I will then see if my fellow researcher, Kevin Li of the statistics department, could potentially help me find some sort of correlation between the tweets and any of these variables.</p>
+    <p>This tool would be specific to this dataset, but if given different a different set of tweets (with an adjusted NLP classifier), dictionary of relevant blocks/streets/gangs, and police data, it will hopefully be applicable to more than one region or city.</p>
+    <p>My goal for the project is to get an understanding of how computer science is used in academic research. I would love to create a useful and relevant tool, but I value the experience and learning process over any results I might find. However, my goal for my specific creation is for it to be an accurate representaiton of my findings that is easy to use and robust.</p>
+    <a target="_blank"><u>Link to Final Project Here</u></a>
+  </div>
+
+  <!-- Blog Section -->
+  <div class="w3-container w3-padding-32" id="blog">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><b>Blog</b></h3>
+    <p>This is my weekly blog - check back for new posts each week!</p>
+
+    <h4 style="background-color:darkgray;">Week 2</h4>
+    <p>This week was spent mostly exploring potential ideas </p>
+
+    <h4 style="background-color:darkgray;">Week 1</h4>
+    <p>Hi! Welcome to my weekly blog, where I will discuss and reflect on my participation in the DREU program over the course of the summer. I will post once per week, documenting my current work, conversations I have with other computer scientists, success and frustrations. I will also report on my exploration of the amazing New York City and detail my involvement in extracurricular activities. I hope you enjoy!</p>
+    <p>I met with my mentor at the beginning of the week to discuss possible projects to get involved with, as well as my experience in computer science. Dr. McKeown was very welcoming and made me very excited to work under her group this summer. The two NLP projects she detailed in this initial meeting were: 
+    <p>1) a study of energy use in Columbia apartments, involving generating personalized feedback based on usage data in order to alter energy consumption behaviors, and </p>
+    <p>2) the analysis of gang activity via social media, in an attempt to predict and possibly prevent gang violence.</p>
+    <p>Both of these projects greatly interest me. I feel like they both exemplify how natural language processing can be applied to real world data and create a positive impact. Besides reading a few summaries online, before meeting with Dr. McKeown, I had yet to see a real example of NLP in action. However, now I see how it can be directly applied to address a major problem.
+    <p>This week, Dr. McKeown instructed me to read several papers as well as meet with several people involved with these and other NLP projects. I met with Elsbeth Turcan, a grad student who is working on the energy project and Noura Farra, who is working on an NLP project involving less widely spoken languages. I also spoke on the phone with Fei-Tzin Lee, who is working on the gang activity project. Each was very informative and helped me understand a little more about NLP and their roles as researchers.</p>
+    <p>I also got to sit in on a meeting about the gang activity project. I listened to a data annotator give and update about the labeling of Twitter data and other updates on various aspect of the data processing. The meeting was held in the Northwest Corner Building of Columbia on the top floor, and the views were incredible!</p>
+    <p>I also met with Kevin Li, another undergrad working on the gang project. He is a statistics major at Columbia and is also interested in getting involved. He showed me around the campus and took me to a spot where Columbia students often study and get coffee. I got to know him a bit and am excited to work more on this project alongside him.</p>
+    <p>During this first week, I also explored online sources about machine learning, neural networks, natural language processing tools. One thing I found particularly interesting was a selection of papers that I read about the ethics of the use of big data. As data becomes increasingly available to us through users’ online presences, it is important to consider how its use can affect the people who stand behind the numbers and figures.</p> 
+    <p>Towards the end of the week, I met again with Dr. McKeown about possible ways to get involved on both projects. For the gang intervention project, a possible task for me would be to sort through the tweets and look for any information about the location of the user (i.e. specific blocks, streets, schools in Chicago). Then, I would plot this on a map. I would also plot the amount of blight or empty buildings, as well as arrests related to substance abuse, and look for a correlation between the data.</p>
+    <p>For the environment/energy project, one potential project would be to augment the templates used to relay information to the users about their energy consumption. I could generate more ways to inform them about particulars of the data. I could also improve the summarizations of articles generated by the program, by using more punchy synonyms to draw in the reader. The article summaries would hopefully educate the reader about environmental issues and hopefully encourage them to reduce consumption of energy. Finally, I could get involved in this project by simply learning about the machine learning algorithms used in this project.</p>
+    <p>I plan on spending some time over the weekend and during the beginning of next week exploring and researching about these possible projects to see what jumps out at me. </p>
+    <p>The final thing I have worked on thus far is the creation of this website. I first considered using a site like Wordpress to host my site; but then, I decided instead to create my site from scratch. I have been wanting to practice and learn more HTML, and this seems like a prime opportunity to do so.</p>
+    <p>Thank you for reading and check back next week for my next post.</p>
+    <p>Megan</p>
+
+</p>
+  </div>
+  
+<!-- End page content -->
+</div>
